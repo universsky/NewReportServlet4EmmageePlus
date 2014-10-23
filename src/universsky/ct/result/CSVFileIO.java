@@ -33,7 +33,7 @@ public class CSVFileIO {
 	public List<HashMap<String, ArrayList<String>>> query(String run_stamp) {
 		List<HashMap<String, ArrayList<String>>> result = new ArrayList<HashMap<String, ArrayList<String>>>();
 		String csvFilePath = "D:\\Apache2.2\\htdocs\\res\\Emmagee_TestResult_"
-				+ run_stamp + ".csv";
+				+ run_stamp + ".csv"; // 此处要求Apache的安装路径
 		ArrayList<String[]> csvList = new ArrayList<String[]>();
 		try {
 			CsvReader reader = new CsvReader(csvFilePath, ',',
